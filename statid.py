@@ -93,9 +93,17 @@ idmap = {
         'long': 'A first down or TD occurred due to a penalty. A play can '
                 'have a first down from a pass or rush and from a penalty.',
     },
+    # 6: {
+    #     'cat': 'team',
+    #     'fields': ['third_down_att', 'third_down_conv'],
+    #     'desc': '3rd down attempt converted',
+    #     'long': '3rd down play resulted in a first down or touchdown.',
+    # },
     6: {
-        'cat': 'team',
-        'fields': ['third_down_att', 'third_down_conv'],
+        'cat': ['team', 'team', 'defense'],
+        'fields': ['third_down_att',
+                   'third_down_conv',
+                   'third_down_stop_failed'],
         'desc': '3rd down attempt converted',
         'long': '3rd down play resulted in a first down or touchdown.',
     },
